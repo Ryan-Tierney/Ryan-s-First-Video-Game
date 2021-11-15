@@ -22,11 +22,12 @@ class MainScene extends Phaser.Scene {
     }
     
     preload() {
+        this.preload.image('imgBack', '../assets/img_back.png');
         
     }
 
     create() {
-
+        this.sprBack = this.add.image(SCREEN_CX, SCREEN_CY, 'imgBack');
     }
 
     update(time, delta) {
