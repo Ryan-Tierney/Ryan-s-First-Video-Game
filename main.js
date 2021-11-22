@@ -74,6 +74,17 @@ class PauseScene extends Phaser.Scene {
   }
 }
 
+class Settings {
+  constructor(scene) {
+    this.scene = scene;
+
+    var font = { font: "32px Arial", fill: "#000000" };
+    this.txtPause = scene.add.text(1720, 5, "", font);
+
+    this.show();
+  }
+}
+
 //game configuration
 var config = {
   type: Phaser.AUTO,
